@@ -1,0 +1,54 @@
+Configuraciones git
+cdgit add
+
+Comandos git
+ls          //Listar directorios
+pdw         //Directorio actual
+mkdir       //Crear directorio 
+Cd          //Entrar a directorio
+cd ..       //Retrocede un niver jerarquico
+git init    //Inicializa un repositorio en el directorio
+ls -a       //Listar todos los directorios (ocultos tambien)
+code. 	//Abre editor en directorio actual
+git status	//Estado de seguimiento en git
+git add	//seleccionar elementos listos para ser comprometidos, etapa de Stage (espacio en memoria ram)
+git add -A
+git commit -m "Escribir mensaje representativo"  //Elementos seleccionados han sido comprometidos (todos los archivos de stage)
+git commit 	//compromete archivos (abre editor de texto para agregarv comentarios)
+rm archivo.txt  //Elimina archivo del repositorio (se debe agregar este cambio a etapa de stage con git add)
+git rm archivo.txt  //Elimina y agrega a stage el archivo, quedado listo para el commit
+git restore --stage archivo.txt  // Saca del stage a archivo
+git restore archivo.txt    //Recupera archivo 
+mv		//Renombra a archivo, no olvidar el add y luego el commit
+git mv	//Renombra y agrega a stage el archivo, quedando listo para el commit
+git status -s    //Status corto
+git diff	//Muestra modificaciones 
+git diff --staged    //Muestra modificaciones en etapa de stage
+git log	//Muestra todo el detalle del repositorio
+git log --oneline	//Muestra modificaciones, identificador y cometarios
+git branch     //Muestra rama principal
+git checkout -b nombrerama	//Cambia de rama principal a nueva (crea bifurcación)
+cat nombreArchivo.txt	//Muestra contenido de archivo
+git marge nombreRama	//(es un commit a la rama principal)Junta rama secundaria con principal (debe ser si o si desde la principal)
+git remote add origin URLubicaciónRepositorio
+git push -u origin master   //(enviar cosas)Permite subir cambios desde rama donde se trabaja 
+
+git clone		//Trae repositorio remoto
+git fetch		//(traer cosas)Trae actualizaciones en repositorio remoto
+git merge		//Une archivos traidos de repositorio romoto a local en el directorio de trabajo local
+git pull		/Une git fetch y merge (copia en directorio y repositorio)
+
+
+*Puedo crear ramas en el repositorio y guardar
+
+git reset codigoVersión --hard  (Cuidado al usar)
+git reset codigoVersión --soft
+git checkout codigoVersion nombreArchivo.txt	//Vuelvo a versión anterior
+git checkout master nombreArchivo.txt	//Vuelvo a versión actual
+git rm --cached		//Eliminar archivo de repositorio pero no del disco duro (siguen sus versiones existiendo)
+git rm --force		//Eliminar archivo de repositorio y del disco duro (siguen sus versiones existiendo)
+
+git show-branch
+
+
+La ruta es, git add (agrega a stage archivos), git commit (compromete archivos) y git push (alctualiza a github)
