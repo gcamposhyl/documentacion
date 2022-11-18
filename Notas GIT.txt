@@ -3,7 +3,7 @@ cdgit add
 
 Comandos git
 ls          //Listar directorios
-pdw         //Directorio actual
+pwd         //Directorio actual
 mkdir       //Crear directorio 
 Cd          //Entrar a directorio
 cd ..       //Retrocede un niver jerarquico
