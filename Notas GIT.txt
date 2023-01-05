@@ -31,7 +31,10 @@ git checkout -b nombrerama	//Cambia de rama principal a nueva (crea bifurcación
 cat nombreArchivo.txt	//Muestra contenido de archivo
 git marge nombreRama	//(es un commit a la rama principal)Junta rama secundaria con principal (debe ser si o si desde la principal)
 git remote add origin URLubicaciónRepositorio
-git push -u origin master   //(enviar cosas)Permite subir cambios desde rama donde se trabaja 
+git push -u origin master   //(enviar cosas)Permite subir cambios desde rama donde se trabaja
+
+Para crear llave publica
+shh-keygen -o -t rsa -C "gcampos@hyl.cl"
 
 git clone		//Trae repositorio remoto
 git fetch		//(traer cosas)Trae actualizaciones en repositorio remoto
